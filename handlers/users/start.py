@@ -28,7 +28,7 @@ async def bot_start(message: types.Message):
                     f"Bazada <b>{count[0]}</b>  ta foydalanuvchi bor"
                 )
 
-        text = "Assalomu alaykum xush kelibsiz"
+        text = f"Qalaysam {message.from_user.full_name}"
         await message.answer(text)
 
     except Exception as err:
